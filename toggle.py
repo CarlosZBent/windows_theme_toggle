@@ -1,6 +1,5 @@
 from subprocess import Popen, DEVNULL
 import sys
-import colors
 
 
 def light():
@@ -11,7 +10,7 @@ def light():
 	
 	process = [Popen(cmd, shell=True, stdout=DEVNULL) for cmd in light]
 	
-	print('    \033[35m=> \033[32mchanged theme to \033[31m\033[01mLIGHT\033[0m \n')
+	print('\n    \033[35m=> \033[32mchanged theme to \033[31m\033[01mLIGHT\033[0m \n')
 
 
 def dark():
@@ -22,7 +21,7 @@ def dark():
 
 	process = [Popen(cmd, shell=True, stdout=DEVNULL) for cmd in dark]
 
-	print('    \033[35m=> \033[32mchanged theme to \033[31m\033[01mDARK\033[0m \n')
+	print('\n    \033[35m=> \033[32mchanged theme to \033[31m\033[01mDARK\033[0m \n')
 		
 
 if __name__ == "__main__":
